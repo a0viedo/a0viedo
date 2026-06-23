@@ -1,5 +1,5 @@
 
-Hi there, my name is Alejandro and I'm a Senior Backend Engineer. I've collaborated with a few Open Source projects and initiatives, like [Nodeschool](https://nodeschool.io/) and 
+Hi there, my name is Alejandro and I'm a software engineer. I've collaborated with a few Open Source projects and initiatives, like [Nodeschool](https://nodeschool.io/) and 
 [Nodeconf Argentina](https://nodeconfar.com). In my free time I love to brew coffee, play videogames and listen to live music.
 
 
