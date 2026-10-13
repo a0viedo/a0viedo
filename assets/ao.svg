@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="420" viewBox="0 0 1000 420" fill="none" role="img" aria-labelledby="title description">
+  <title id="title">Alejandro Oviedo — Platform Engineering</title>
+  <desc id="description">Alejandro Oviedo, Barcelona, Spain. Engineering leader with 15+ years building distributed systems. Tools: GCP, AWS, Kubernetes, ArgoCD, Terraform. Orange light pulses travel across a dark circuit board.</desc>
+  <defs>
+    <linearGradient id="board" x1="0" y1="0" x2="1000" y2="420" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#131a20"/><stop offset=".55" stop-color="#0b1117"/><stop offset="1" stop-color="#10171d"/>
+    </linearGradient>
+    <radialGradient id="warmth" cx="0" cy="0" r="1" gradientTransform="translate(622 215) scale(380 310)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fa7524" stop-opacity=".10"/><stop offset="1" stop-color="#fa7524" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1000" y2="420" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5e4634"/><stop offset=".45" stop-color="#283137"/><stop offset="1" stop-color="#67422b"/>
+    </linearGradient>
+    <linearGradient id="chip" x1="0" y1="0" x2="250" y2="44" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1b2227"/><stop offset="1" stop-color="#11191f"/>
+    </linearGradient>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".6" fill="#69717a" opacity=".15"/></pattern>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="3" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="card"><rect x="1" y="1" width="998" height="418" rx="22"/></clipPath>
+    <path id="route1" d="M470 0V34L546 110H694"/>
+    <path id="route2" d="M532 0V62L578 108V168H694"/>
+    <path id="route3" d="M574 420V307L619 262V226H694"/>
+    <path id="route4" d="M469 420V389L574 284H694"/>
+    <path id="route5" d="M630 420V380L668 342H694"/>
+    <path id="route6" d="M0 313H20L37 330V369L54 386H315L343 414H399"/>
+    <path id="route7" d="M0 57H132L153 36H338L368 6"/>
+    <path id="route8" d="M944 168H963L982 149V41L964 23H742L719 0"/>
+    <path id="route9" d="M944 284H967L981 298V379L965 395H808L783 420"/>
+    <g id="module">
+      <path d="M0 14H-8M0 22H-8M0 30H-8M250 14H258M250 22H258M250 30H258" stroke="#835334" stroke-width="2"/>
+      <rect width="250" height="44" rx="8" fill="url(#chip)" stroke="#59402e"/>
+      <rect x="1" y="1" width="248" height="42" rx="7" fill="none" stroke="#ffab62" stroke-opacity=".035"/>
+      <circle cx="23" cy="22" r="3" fill="#ffaa64" class="led"/>
+      <path d="M225 18L229 22L225 26" fill="none" stroke="#996641" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </defs>
+  <style>
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; }
+    .mono { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace; }
+    .signal { stroke: #ffc083; stroke-width: 3; stroke-linecap: round; stroke-dasharray: 46 254; stroke-dashoffset: 300; animation: flow 3s linear infinite; filter: url(#glow); }
+    .slow { animation-duration: 5s; }
+    .led { animation: breathe 2.5s ease-in-out infinite; }
+    @keyframes flow { to { stroke-dashoffset: 0; } }
+    @keyframes breathe { 0%,100% { opacity: .45; } 50% { opacity: 1; } }
+  </style>
+  <g clip-path="url(#card)">
+    <rect width="1000" height="420" fill="url(#board)"/>
+    <rect width="1000" height="420" fill="url(#grid)"/>
+    <rect width="1000" height="420" fill="url(#warmth)"/>
+
+    <!-- Etched copper tracks. Text sits in the clear area on the left. -->
+    <g stroke="#9c6039" stroke-opacity=".24" stroke-width="1.2" stroke-linejoin="round">
+      <use href="#route1"/><use href="#route2"/><use href="#route3"/><use href="#route4"/><use href="#route5"/>
+      <use href="#route6"/><use href="#route7"/><use href="#route8"/><use href="#route9"/>
+      <path d="M452 0V40L534 122H658L676 140H694M486 0V28L556 98H666L678 110H686"/>
+      <path d="M516 0V66L564 114V178L580 194H648L674 168H686M548 0V55L593 100V154H643L657 168H686"/>
+      <path d="M555 420V302L604 253V211H653L668 226H686M591 420V312L634 269V243H665L682 226"/>
+      <path d="M451 420V383L562 272H658L670 284H686M488 420V394L586 296H657L669 284"/>
+      <path d="M614 420V375L659 330H675L687 342M647 420V384L677 354H694"/>
+      <path d="M0 41H126L148 20H334L354 0M0 73H138L159 52H345L384 13V0M0 329H8L21 342V375L48 402H308L327 420"/>
+      <path d="M944 110H950L965 95V53L951 39H759M944 226H964L998 192M944 342H958L965 349V366L952 379H818L777 420"/>
+    </g>
+    <g>
+      <use href="#route1" class="signal" style="animation-delay:-1s"/>
+      <use href="#route2" class="signal" style="animation-delay:-4s"/>
+      <use href="#route3" class="signal" style="animation-delay:-2.8s"/>
+      <use href="#route4" class="signal" style="animation-delay:-5.5s"/>
+      <use href="#route5" class="signal" style="animation-delay:-.6s"/>
+      <use href="#route6" class="signal slow" style="animation-delay:-7s"/>
+      <use href="#route7" class="signal slow" style="animation-delay:-3s"/>
+      <use href="#route8" class="signal slow" style="animation-delay:-5s"/>
+      <use href="#route9" class="signal slow" style="animation-delay:-8s"/>
+    </g>
+    <g fill="#10171b" stroke="#9b613d" stroke-width="1.3">
+      <circle cx="759" cy="39" r="3"/><circle cx="399" cy="414" r="3"/>
+      <circle cx="658" cy="122" r="3"/><circle cx="648" cy="194" r="3"/><circle cx="653" cy="211" r="3"/>
+      <circle cx="657" cy="296" r="3"/><circle cx="675" cy="330" r="3"/>
+    </g>
+
+    <!-- Profile -->
+    <g class="sans">
+      <rect x="64" y="80" width="22" height="3" rx="1.5" fill="#f5a060"/>
+      <text x="98" y="86" fill="#c7a789" font-size="12" font-weight="600" letter-spacing="2.1">PLATFORM ENGINEERING</text>
+      <text x="61" y="158" fill="#f4f2ed" font-size="55" font-weight="650" letter-spacing="-1.9">Alejandro</text>
+      <text x="61" y="215" fill="#f4f2ed" font-size="55" font-weight="650" letter-spacing="-1.9">Oviedo<tspan fill="#f5a060">.</tspan></text>
+      <g transform="translate(65 244)" stroke="#b99477" stroke-width="1.5" stroke-linejoin="round">
+        <path d="M7 18S.5 11.5.5 6.5a6.5 6.5 0 1 1 13 0C13.5 11.5 7 18 7 18Z"/>
+        <circle cx="7" cy="6.5" r="2.1"/>
+      </g>
+      <text x="90" y="259" fill="#b8bdc2" font-size="17">Barcelona, Spain</text>
+      <path d="M64 298H112" stroke="#835735"/>
+      <text x="64" y="326" fill="#ddd6ce" font-size="16" font-weight="500">Engineering leader.</text>
+      <text x="64" y="350" fill="#8e999f" font-size="14">15+ years building distributed systems.</text>
+    </g>
+
+    <!-- The five requested tools -->
+    <text x="694" y="64" fill="#a38c79" font-size="10" letter-spacing="2.4" class="mono">TOOLKIT</text>
+    <g class="sans" fill="#e6e4df" font-size="17" font-weight="500">
+      <g transform="translate(694 88)"><use href="#module"/><text x="44" y="28">GCP</text></g>
+      <g transform="translate(694 146)"><use href="#module"/><text x="44" y="28">AWS</text></g>
+      <g transform="translate(694 204)"><use href="#module"/><text x="44" y="28">Kubernetes</text></g>
+      <g transform="translate(694 262)"><use href="#module"/><text x="44" y="28">ArgoCD</text></g>
+      <g transform="translate(694 320)"><use href="#module"/><text x="44" y="28">Terraform</text></g>
+    </g>
+    <g fill="#0b1117" stroke="#3b3e3e">
+      <circle cx="23" cy="23" r="4"/><circle cx="977" cy="23" r="4"/>
+      <circle cx="23" cy="397" r="4"/><circle cx="977" cy="397" r="4"/>
+    </g>
+  </g>
+  <rect x=".75" y=".75" width="998.5" height="418.5" rx="22" stroke="url(#edge)" stroke-width="1.5"/>
+</svg>
